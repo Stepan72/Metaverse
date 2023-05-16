@@ -43,6 +43,82 @@ const World = () => (
           <img src="people-03.png" alt="people" className="w-full h-full" />
         </div>
         {/* /// нужно добавить еще 2 картинки!!! */}
+        <div>
+          <div className="w-[217px] h-[167px] rounded-[15%]  absolute top-[40%] left-[15%] bg-[rgba(0,0,0,0.25)] flex flex-col justify-center items-center">
+            <img
+              src="/planet-02.png"
+              alt="planet"
+              className="object-cover object-fit h-[90%] w-[90%] rounded-[15%]"
+            />
+            <div className="absolute top-[60%]">
+              <div className="flex flex-wrap flex-row justify-center items-center">
+                <div className="flex flex-row">
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680]  ">
+                    <img
+                      src="people-01.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680]  ">
+                    <img
+                      src="people-02.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680] ">
+                    <img
+                      src="people-03.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                </div>
+                <p className="text-white text-[12px]">+264 has joined</p>
+              </div>
+              <h4 className="font-bold text-white">The Upside Down</h4>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="w-[217px] h-[167px] rounded-[15%]  absolute top-[10%] right-[20%] bg-[rgba(0,0,0,0.25)] flex flex-col justify-center items-center">
+            <img
+              src="/planet-05.png"
+              alt="planet"
+              className="object-cover object-fit h-[90%] w-[90%] rounded-[15%]"
+            />
+            <div className="absolute top-[60%]">
+              <div className="flex flex-wrap flex-row justify-center items-center">
+                <div className="flex flex-row">
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680]  ">
+                    <img
+                      src="people-03.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680]  ">
+                    <img
+                      src="people-01.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="w-[24px] h-[24px] rounded-full bg-[#5d6680] ">
+                    <img
+                      src="people-02.png"
+                      alt="people"
+                      className="w-full h-full"
+                    />
+                  </div>
+                </div>
+                <p className="text-white text-[12px]">+314 has joined</p>
+              </div>
+              <h4 className="font-bold text-white">The Hawkin Labs</h4>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   </section>
