@@ -3,7 +3,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/index';
 import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
-import Image from 'next/image';
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
