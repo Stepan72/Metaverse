@@ -1,4 +1,5 @@
 import { Footer, Navbar } from '../components';
+import React from 'react';
 import {
   About,
   Explore,

@@ -1,4 +1,6 @@
 'use client';
+import React from 'react';
+
 import { motion } from 'framer-motion';
 import styles from '../styles/index';
 import { fadeIn } from '../utils/motion';
