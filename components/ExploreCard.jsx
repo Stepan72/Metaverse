@@ -5,7 +5,7 @@ import { fadeIn } from '../utils/motion';
 import Image from 'next/image';
 
 function ExploreCard({ id, imgUrl, title, index, active, handleClick }) {
-  console.log(active);
+  // console.log(active);
 
   return (
     <motion.div
