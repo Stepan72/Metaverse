@@ -38,7 +38,7 @@ const Footer = () => (
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">Metaverse</h4>
           <p className="font-normal text-white opacity-50 text-[14px]">
-            Copyright © 2023 Metaverse. Made by Stepan Nimchuk. All rights
+            Copyright ©2023 Metaverse. Made by Stepan Nimchuk. All rights
             reserved.
           </p>
           <div className="gap-4 flex">
