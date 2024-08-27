@@ -1,9 +1,9 @@
-import '../styles/globals.css';
-import React from 'react';
+import "../styles/globals.css";
+import React from "react";
 
 export const metadata = {
-  title: 'Metaverse',
-  description: 'Beautiful Metaverse',
+  title: "Metaverse",
+  description: "Beautiful Metaverse",
 };
 
 const RootLayout = ({ children }) => (
