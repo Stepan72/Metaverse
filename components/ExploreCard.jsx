@@ -7,8 +7,6 @@ import { fadeIn } from "../utils/motion";
 import Image from "next/image";
 
 function ExploreCard({ id, imgUrl, title, index, active, handleClick }) {
-  // console.log(active);
-
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -19,9 +17,11 @@ function ExploreCard({ id, imgUrl, title, index, active, handleClick }) {
         handleClick(id);
       }}
     >
-      <img
+      <Image
         src={imgUrl}
         alt={title}
+        width={3624}
+        height={1689}
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
       {active !== id ? (
@@ -33,9 +33,11 @@ function ExploreCard({ id, imgUrl, title, index, active, handleClick }) {
           <div
             className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
           >
-            <img
+            <Image
               src="assets/headset.svg"
               alt="headset"
+              width={29}
+              height={29}
               className="w-1/2 h-1/2 object-contain"
             />
           </div>
