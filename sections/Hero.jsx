@@ -48,7 +48,7 @@ const Hero = () => (
               alt="stamp"
               width={100}
               height={100}
-              className="sm:w-[155px]  sm:h-[155px]  object-contain"
+              className="sm:w-[155px] sm:h-[155px] object-contain"
             />
           </div>
         </a>
