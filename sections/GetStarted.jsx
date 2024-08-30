@@ -1,11 +1,12 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
-import { motion } from 'framer-motion';
-import styles from '../styles/index';
-import { staggerContainer, planetVariants, fadeIn } from '../utils/motion';
-import { StartSteps, TitleText, TypingText } from '../components';
-import { startingFeatures } from '../constants/index';
+import { motion } from "framer-motion";
+import styles from "../styles/index";
+import { staggerContainer, planetVariants, fadeIn } from "../utils/motion";
+import { StartSteps, TitleText, TypingText } from "../components";
+import { startingFeatures } from "../constants/index";
+import Image from "next/image";
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -13,21 +14,23 @@ const GetStarted = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: 'false', amount: 0.25 }}
+      viewport={{ once: "false", amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={planetVariants('left')}
+        variants={planetVariants("left")}
         className={`${styles.flexCenter} flex-1`}
       >
-        <img
-          src="/get-started.png"
+        <Image
+          src="/assets/get-started.webp"
           alt="get started"
+          width={1403}
+          height={1535}
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] flex flex-col justify-center"
       >
         <TypingText title="| How Metaversus Works" />
