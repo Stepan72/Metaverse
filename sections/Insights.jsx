@@ -1,11 +1,10 @@
-'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
-import styles from '../styles/index';
-import { staggerContainer } from '../utils/motion';
-import Image from 'next/image';
-import { InsightCard, TitleText, TypingText } from '../components';
-import { insights } from '../constants/index';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "../styles/index";
+import { staggerContainer } from "../utils/motion";
+import { InsightCard, TitleText, TypingText } from "../components";
+import { insights } from "../constants/index";
 
 const Insights = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -13,7 +12,7 @@ const Insights = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: 'false', amount: 0.25 }}
+      viewport={{ once: "false", amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex  flex-col`}
     >
       <TypingText title="| Insight" textStyles="text-center" />

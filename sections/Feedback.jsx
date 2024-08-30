@@ -1,8 +1,9 @@
-'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
-import styles from '../styles/index';
-import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "../styles/index";
+import { staggerContainer, fadeIn, zoomIn } from "../utils/motion";
+import Image from "next/image";
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -10,11 +11,11 @@ const Feedback = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: 'false', amount: 0.25 }}
+      viewport={{ once: "false", amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative"
       >
         <div className="feedback-gradient" />
@@ -33,20 +34,24 @@ const Feedback = () => (
         </p>
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn("left", "tween", 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
+        <Image
+          src="/assets/planet-09.webp"
           alt="planet-09"
+          width={4908}
+          height={2259}
           className="w-full lg:h-[610px] h-auto object-cover min-h-[210px] rounded-[40px]"
         />
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[15%] top-[3%] "
         >
-          <img
-            src="/stamp.png"
+          <Image
+            src="/assets/stamp.webp"
+            width={155}
+            height={155}
             alt="stamp"
             className="w-[155px] h-[155px] object-contain"
           />
